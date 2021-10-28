@@ -4,6 +4,9 @@ head(mtcars)
 # predict mpg vs wt
 lm(mpg~wt,mtcars) %>% summary() 
 
+# OR
+lm(mpg~wt,mtcars) %>% glance()
+
 # Predict mpg vs wt + cyl
 lm(mpg~wt+cyl,mtcars) %>% summary() 
 
